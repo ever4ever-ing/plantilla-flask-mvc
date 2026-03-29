@@ -1,3 +1,6 @@
-from flask_app.models.taco import Taco
+"""Modelos SQLAlchemy.
 
-__all__ = ["Taco"]
+Define tus clases con `db.Model` e impórtalas aquí para que Alembic las detecte, por ejemplo:
+
+    from flask_app.models.item import Item  # noqa: F401
+"""

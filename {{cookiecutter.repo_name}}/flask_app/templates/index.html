@@ -1,17 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Tacos{% endblock %}
+{% block title %}Inicio{% endblock %}
 {% block content %}
-<h1>Tacos</h1>
-<p><a href="{{ url_for('tacos.nuevo') }}">Agregar taco</a></p>
-<form action="{{ url_for('tacos.resultados') }}" method="get">
-    <input type="search" name="q" placeholder="Buscar…">
-    <button type="submit">Buscar</button>
-</form>
-<ul>
-    {% for t in tacos %}
-    <li><a href="{{ url_for('tacos.detalle', taco_id=t.id) }}">{{ t.nombre }}</a> — {{ t.precio }}</li>
-    {% else %}
-    <li>No hay tacos (o la base de datos no está disponible).</li>
-    {% endfor %}
-</ul>
+<h1>Proyecto listo</h1>
+<p>Plantilla Flask MVC: añade modelos en <code>flask_app/models</code>, rutas en <code>flask_app/controllers</code> y plantillas aquí.</p>
 {% endblock %}

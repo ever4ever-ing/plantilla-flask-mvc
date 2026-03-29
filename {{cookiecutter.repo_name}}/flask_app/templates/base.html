@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Tacos{% endblock %}</title>
+    <title>{% block title %}App{% endblock %}</title>
     {% block head_extra %}{% endblock %}
 </head>
 <body>
 <header>
     <nav>
-        <a href="{{ url_for('tacos.index') }}">Inicio</a>
+        <a href="{{ url_for('main.index') }}">Inicio</a>
     </nav>
 </header>
 <main>

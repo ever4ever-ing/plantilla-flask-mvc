@@ -11,7 +11,7 @@ def get_sqlalchemy_uri():
     password = quote_plus(os.environ.get("MYSQL_PASSWORD", "password"))
     host = os.environ.get("MYSQL_HOST", "localhost")
     port = os.environ.get("MYSQL_PORT", "3306")
-    database = os.environ.get("MYSQL_DATABASE", "tacos_db")
+    database = os.environ.get("MYSQL_DATABASE", "db")
     return f"mysql+pymysql://{user}:{password}@{host}:{port}/{database}"
 
 
@@ -21,6 +21,6 @@ def get_connection():
         host=os.environ.get("MYSQL_HOST", "localhost"),
         user=os.environ.get("MYSQL_USER", "root"),
         password=os.environ.get("MYSQL_PASSWORD", "password"),
-        database=os.environ.get("MYSQL_DATABASE", "tacos_db"),
+        database=os.environ.get("MYSQL_DATABASE", "db"),
         cursorclass=DictCursor,
     )

@@ -13,10 +13,10 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    import flask_app.models  # noqa: F401 — registrar modelos en metadata
+    import flask_app.models  # noqa: F401 — registra modelos cuando los añadas
 
-    from flask_app.controllers.tacos import tacos_bp
+    from flask_app.controllers.controller import main_bp
 
-    app.register_blueprint(tacos_bp)
+    app.register_blueprint(main_bp)
 
     return app
