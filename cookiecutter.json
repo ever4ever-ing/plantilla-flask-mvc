@@ -4,6 +4,7 @@
     "database_password": "password",
     "proyect_short_description": "descripcion_del_proyecto",
     "license": "MIT",
+    
     "_copy_without_render": [
         "{{cookiecutter.repo_name}}/flask_app/templates/*.html"
     ]
