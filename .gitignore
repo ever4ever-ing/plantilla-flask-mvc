@@ -1,0 +1,46 @@
+# Template Cookiecutter: escapar 
+
+# Byte-compiled / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+
+# Variables de entorno (secretos / locales)
+.env
+.env.*
+!.env.example
+\{\{cookiecutter.repo_name\}\}/.env
+
+# Flask
+instance/
+.webassets-cache
+
+# Tests / herramientas
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Empaquetado
+dist/
+build/
+*.egg-info/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

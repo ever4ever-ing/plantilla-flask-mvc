@@ -1,0 +1,6 @@
+{
+    "repo_name": "nombre_del_proyecto",
+    "database_user": "root",
+    "database_password": "password",
+    "proyect_short_description": "descripcion_del_proyecto"
+}
