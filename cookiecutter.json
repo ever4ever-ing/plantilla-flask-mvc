@@ -5,6 +5,8 @@
     "database_password": "password",
     "proyect_short_description": "descripcion_del_proyecto",
     "_copy_without_render": [
+        "flask_app/templates/*.html",
+        "migrations/script.py.mako",
         "{{cookiecutter.repo_name}}/flask_app/templates/*.html",
         "{{cookiecutter.repo_name}}/migrations/script.py.mako"
     ]
